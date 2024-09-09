@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/profile-pic (5).png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Projects</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/project.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Lavoro<span> coding</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a style="font-weight: normal;" href="index.html">Home</a></li>
+                    <li><a onclick="scrollToSection()" style="cursor: pointer;">About us</a></li>
+                    <li><a href="#" style="font-weight: bold;">Projects</a></li>
+                    <li><a href="joinus.html">Join us</a></li> 
+
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="go-premium-cta"><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h3>Our Projects</h3>
+            <h5>some of the selected pojects</h5>
+            <div class="projects-container">
+                <a href="https://www.figma.com/design/iydVJI0Tb6AlLQMERKQJVf/Untitled?node-id=0-1&t=lS0Pb2kCvphh4TG2-1" class="project" target="_blank">
+                    <img src="images/client work.jpg" alt="Project 1 Mockup" class="project-image">
+                    <div class="project-details">
+                        <h3>NOSTALGIO</h3>
+                        <p class="project-description">An innovative and unique app design of NOSTALGIO</p>
+                        <p class="project-tech">Technologies: Figma</p>
+                    </div>
+                </a>
+                <a href="https://thenetworkingowl.com" class="project" target="_blank">
+                    <img src="images/client work (1).jpg" alt="Project 2 Mockup" class="project-image">
+                    <div class="project-details">
+                        <h3>THE NETWORKING OWL</h3>
+                        <p class="project-description">A web application for networking purposes</p>
+                        <p class="project-tech">Technologies: frontend in React, backend in Node + MongoDB</p>
+                    </div>
+                </a>
+                <a href="https://www.figma.com/design/bzG0jzzhyVj2DNfQr1LlfE/TMC-app-(Community)?t=lS0Pb2kCvphh4TG2-1" class="project" target="_blank">
+                    <img src="images/Frame 1.jpg" alt="Project 3 Mockup" class="project-image">
+                    <div class="project-details">
+                        <h3>TMC-app</h3>
+                        <p class="project-description">A design for an e-commerce platform with eye-catching features</p>
+                        <p class="project-tech">Technologies: Figma</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                        <p>
+                            <i class="fas fa-map-marked-alt"></i> 
+                            <a href="https://www.google.com/maps?q=Lane 10, royal avenue, Near COMSATS university, Islamabad, pakistan" target="_blank">
+                                Lane 10, royal avenue, Near COMSATS university, Islamabad
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-comments"></i> Let's Discuss</h3>
+                        <p><i class="fas fa-envelope"></i> 
+                            <a href="mailto:your.email@example.com">obiihuxain123@gmail.com</a>
+                        </p>
+                        <p><i class="fas fa-phone-alt"></i> 
+                            <a href="https://wa.me/+92380908615" target="_blank">+923280908615</a>
+                        </p>
+                    </div>
+                    <div class="contact-button">
+                        <a href="mailto:your.obiihuxain123@gmail.com" class="btn"><i class="fas fa-paper-plane"></i> Send an Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="https://yourwebsite.com" class="logo-link">
+                        <img src="images/profile-pic (5).png" alt=" Logo" class="footer-logo">
+                        <span class="footer-name">Lavoro coding</span>
+                    </a>
+                </div>
+                <div class="footer-right">
+                    <a href="https://www.facebook.com/obaid.hocain" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/obaid-hussain-10465026b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/+923280908615" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/_https.obaid111/profilecard/?igsh=MXZlbW92cGJsbmFkNA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+    
+    mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu-btn');
+    })
+    
+    mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu-btn');
+    })
+    </script>
+</body>
+</html>

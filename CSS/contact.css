@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General Styles */
+.contact-us-section {
+    background: #f0f4f8;
+    padding: 5em 1em;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+/* Left Section */
+.contact-left {
+    flex: 1;
+    background: linear-gradient(135deg, #006BD6, #4B90E2);
+    color: white;
+    padding: 2.5em;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-left:hover {
+    transform: translateY(-10px);
+}
+
+.contact-left h2 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+.contact-left h3 {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+}
+
+.contact-left p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 2em;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.address i {
+    margin-right: 0.7em;
+    font-size: 1.5em;
+}
+
+/* Right Section */
+.contact-right {
+    flex: 1;
+    background: white;
+    padding: 2.5em;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.contact-right h4 {
+    font-size: 1.9em;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    padding: 0.9em;
+    margin-bottom: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #f9f9f9;
+    transition: border 0.3s;
+    width: 100%; /* Make inputs and textareas full-width */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 150px; /* Minimum height for textarea */
+}
+
+input:focus, textarea:focus {
+    border-color: #006BD6;
+    outline: none;
+}
+
+button.submit-btn {
+    background: #006BD6;
+    color: white;
+    border: none;
+    padding: 0.8em 1.6em;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button.submit-btn:hover {
+    background: #004d9b;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 2em; /* Adjust gap between sections */
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+
+    .contact-right {
+        margin-top: 0; /* Remove top margin for better spacing on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-left h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-left h3 {
+        font-size: 1.5em;
+    }
+
+    .contact-left p {
+        font-size: 1em;
+    }
+
+    .contact-right h4 {
+        font-size: 1.5em;
+    }
+
+    input, textarea {
+        padding: 0.8em;
+        font-size: 0.9em;
+    }
+
+    button.submit-btn {
+        font-size: 1em;
+        padding: 0.7em 1.4em;
+    }
+}

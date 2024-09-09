@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/profile-pic (5).png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/project.css">
+    <link rel="stylesheet" href="CSS/joinus.css">
+    <title>Join us</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Lavoro<span> coding</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a style="font-weight: normal;" href="index.html">Home</a></li>
+                    <li><a onclick="scrollToSection()" style="cursor: pointer;">About us</a></li>
+                    <li><a href="projects.html" >Projects</a></li>
+                    <li><a href="#" style="font-weight: bold;">Join us</a></li> 
+
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="go-premium-cta"><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="join-us" class="join-us-section">
+        <div class="joinus-container">
+            <div class="inspiration-container">
+                <img src="images/cytonn-photography-vWchRczcQwM-unsplash.jpg" alt="Join Us" class="join-image">
+                <div class="inspiration-content">
+                    <h2>Be a Part of Something Amazing</h2>
+                    <p>At our company, we believe in creativity, innovation, and the power of collaboration. 
+                    When you join us, you’ll be part of a passionate team, working on projects that shape the future. 
+                    Whether you’re a designer, developer, or strategist, we have a place for you.</p>
+                    <p>Are you ready to make an impact?</p>
+                </div>
+            </div>
+    
+            <div class="form-container">
+                <h2>Join Us</h2>
+                <p>We're always looking for talented individuals to join our team. Fill in the form below to get in touch!</p>
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+    
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+    
+                    <label for="portfolio">Portfolio/Behance/Profile Link</label>
+                    <input type="url" id="portfolio" name="portfolio" placeholder="Link to your work" required>
+    
+                    <label for="cv">Upload CV</label>
+                    <input type="file" id="cv" name="cv">
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="https://yourwebsite.com" class="logo-link">
+                        <img src="images/profile-pic (5).png" alt=" Logo" class="footer-logo">
+                        <span class="footer-name">Lavoro coding</span>
+                    </a>
+                </div>
+                <div class="footer-right">
+                    <a href="https://www.facebook.com/obaid.hocain" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/obaid-hussain-10465026b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/+923280908615" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/_https.obaid111/profilecard/?igsh=MXZlbW92cGJsbmFkNA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+    
+    mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu-btn');
+    })
+    
+    mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu-btn');
+    })
+    </script>
+</html>

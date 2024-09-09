@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.join-us-section {
+    padding: 4em 2em;
+    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+
+}
+.joinus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.inspiration-container {
+    flex: 1;
+    text-align: center;
+    padding: 2em;
+    background-color: #006bd6;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.inspiration-container img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1.5em;
+}
+
+.inspiration-container h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.inspiration-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.form-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-container h2 {
+    color: #006bd6;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.form-container p {
+    color: #555;
+    margin-bottom: 1.5em;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="url"],
+.form-container input[type="file"] {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 1em;
+    background-color: #006bd6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #004a9f;
+}
+
+
+@media (max-width: 768px) {
+    .joinus-container {
+        flex-direction: column;
+    }
+
+    .form-container, .inspiration-container {
+        width: 100%;
+    }
+}
