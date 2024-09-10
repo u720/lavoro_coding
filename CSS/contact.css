@@ -2,12 +2,17 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove default margin to prevent overflow */
+    padding: 0; /* Remove default padding to prevent overflow */
+    box-sizing: border-box; /* Apply box-sizing to ensure padding and borders are included in element's width/height */
 }
 
 /* General Styles */
 .contact-us-section {
     background: #f0f4f8;
     padding: 5em 1em;
+    margin: 0 auto; /* Center content within the section */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
 }
 
 .contact-container {
@@ -26,6 +31,8 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-left:hover {
@@ -67,6 +74,8 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     position: relative;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-right h4 {
@@ -94,12 +103,13 @@ input, textarea {
     font-size: 1em;
     background: #f9f9f9;
     transition: border 0.3s;
-    width: 100%; /* Make inputs and textareas full-width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 textarea {
-    resize: vertical; /* Allow vertical resizing only */
-    min-height: 150px; /* Minimum height for textarea */
+    resize: vertical;
+    min-height: 150px;
 }
 
 input:focus, textarea:focus {
@@ -116,6 +126,8 @@ button.submit-btn {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
+    width: 100%; /* Make the button full width on mobile */
+    box-sizing: border-box;
 }
 
 button.submit-btn:hover {
@@ -123,24 +135,27 @@ button.submit-btn:hover {
     transform: scale(1.05);
 }
 
-/* Responsive */
+/* Responsive Enhancements */
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
-        gap: 2em; /* Adjust gap between sections */
+        gap: 2em;
     }
 
     .contact-left, .contact-right {
         width: 100%;
-        box-sizing: border-box; /* Ensure padding and border are included in width */
-    }
-
-    .contact-right {
-        margin-top: 0; /* Remove top margin for better spacing on small screens */
+        padding: 2em 1.5em;
+        border-radius: 10px;
+        box-sizing: border-box;
     }
 }
 
 @media (max-width: 480px) {
+    .contact-left, .contact-right {
+        padding: 1.5em 1em;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
     .contact-left h2 {
         font-size: 1.8em;
     }
@@ -165,5 +180,33 @@ button.submit-btn:hover {
     button.submit-btn {
         font-size: 1em;
         padding: 0.7em 1.4em;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-left h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-left h3 {
+        font-size: 1.3em;
+    }
+
+    .contact-left p, .address {
+        font-size: 0.9em;
+    }
+
+    .contact-right h4 {
+        font-size: 1.3em;
+    }
+
+    input, textarea {
+        padding: 0.6em;
+        font-size: 0.8em;
+    }
+
+    button.submit-btn {
+        font-size: 0.9em;
+        padding: 0.6em 1.2em;
     }
 }

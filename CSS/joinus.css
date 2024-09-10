@@ -5,9 +5,7 @@
     background-color: #f0f4f8;
     font-family: 'Poppins', sans-serif;
 }
-.container{
 
-}
 .joinus-container {
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +97,6 @@
     background-color: #004a9f;
 }
 
-
 @media (max-width: 768px) {
     .joinus-container {
         flex-direction: column;
@@ -107,5 +104,42 @@
 
     .form-container, .inspiration-container {
         width: 100%;
+        padding: 1.5em;
+    }
+
+    .form-container h2, .inspiration-container h2 {
+        font-size: 1.8em;
+    }
+
+    .form-container p, .inspiration-container p {
+        font-size: 1em;
+    }
+    
+    .form-container button {
+        padding: 0.75em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .join-us-section {
+        padding: 3em 1em;
+    }
+
+    .form-container, .inspiration-container {
+        padding: 1em;
+    }
+
+    .form-container h2, .inspiration-container h2 {
+        font-size: 1.5em;
+    }
+
+    .form-container p, .inspiration-container p {
+        font-size: 0.9em;
+    }
+    
+    .form-container button {
+        padding: 0.75em;
+        font-size: 0.9em;
     }
 }
