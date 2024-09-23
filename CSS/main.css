@@ -87,6 +87,7 @@ section {
   height: 67%;
   position: relative; 
   transition: transform 0.3s ease; 
+  border-radius: 200px;
 }
 
 .hero-img:hover {
